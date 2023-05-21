@@ -1,0 +1,181 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("img/bg.jpg");
+    position: absolute;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    color: white;
+    pointer-events: none; /* Probably have to remove this when enabling Discord logo! */
+}
+
+.title {
+    text-align: center;
+    position: fixed;
+    top: 38%;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+}
+
+.description {
+    text-align: center;
+    position: fixed;
+    top: 45%;
+    left: 51%;
+    font-size: 1.5rem;
+    transform: translate(-50%, -50%);
+}
+
+.loadbar {
+    width: 35%;
+    background-color: gray;
+    height: 40px;
+    position: fixed;
+    top: 50%;
+    border-radius: 5px;
+    left: 50%;
+    font-size: 3rem;
+    transform: translate(-50%, -50%);
+}
+
+
+progress[value] {
+	width: 35%;
+	height: 40px;
+	-webkit-appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+	background-color: rgba(51, 51, 51, 0.459);
+	border-radius: 5px;
+}
+progress[value]::-webkit-progress-value {
+    transition: width 0.5s;
+}
+progress::-webkit-progress-value {
+	background: #00b7ff;
+	border-radius: 0.5rem;
+}
+
+
+/* If Discord logo is enabled, this is important, else its not */
+
+.discord {
+    color: white;
+    text-decoration: none;
+    
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    font-size: 1.5rem;
+
+    width: 100px;
+    height: 100px;
+}
+
+.discord-bg {
+    background-color: black;
+    opacity: 55%;
+    border-radius: 25px;
+    height: 100px;
+    width: 100px;
+}
+
+/* Loading dots, got it from codepen */
+.LoadingDots {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    min-width: 36px
+}
+
+.LoadingDots .dot {
+    width: 4px;
+    height: 4px;
+    margin: 0 0px
+}
+
+.LoadingDots .dot {
+    background-color: #fff;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1s infinite ease-in-out both;
+    animation: sk-bouncedelay 1s infinite ease-in-out both
+}
+
+.LoadingDots.regular {
+    margin: 16px auto
+}
+
+.LoadingDots.small {
+    min-width: 30px
+}
+
+.LoadingDots.small .dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 2px
+}
+
+.LoadingDots.tiny {
+    min-width: 18px
+}
+
+.LoadingDots.tiny .dot {
+    width: 4px;
+    height: 4px;
+    margin: 0 1px
+}
+
+.LoadingDots .first {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s
+}
+
+.LoadingDots .second {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,80%,100% {
+        -webkit-transform: scale(0)
+    }
+
+    40% {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,80%,100% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Advertisement <3 Feel free to remove it but ngl I would love to see it there :D */
+.ad {
+    position: fixed;
+    top: 96%;
+    left: 8%;
+    width: 265px;
+    transform: translate(-50%, -50%);
+
+    opacity: 25%;
+}
